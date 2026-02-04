@@ -1,0 +1,222 @@
+/* Kit Detox - Layout especial */
+
+.cards.kit-detox-cards {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.cards.kit-detox-cards .kit-detox {
+  width: 100%;
+  border-radius: 16px;
+  background: var(--color-white);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.kit-detox__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 420px;
+}
+
+/* Imagem (lado esquerdo) */
+.kit-detox__media {
+  position: relative;
+  overflow: hidden;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kit-detox__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kit-detox__badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: var(--color-black);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Painel de informações (lado direito) */
+.kit-detox__panel {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--color-white);
+}
+
+.kit-detox__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  flex: 1;
+}
+
+.kit-detox__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.kit-detox__header h3 {
+  font-family: "poppinsbold", sans-serif;
+  font-size: clamp(2rem, 1.8rem + 0.5vw, 2.6rem);
+  color: var(--color-black);
+  margin: 0;
+}
+
+.kit-detox__price {
+  font-family: "poppinsbold", sans-serif;
+  font-size: clamp(2.4rem, 2rem + 0.5vw, 3rem);
+  color: var(--color-primary);
+}
+
+.kit-detox__lead {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.kit-detox__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.kit-detox__list li {
+  padding: 1rem 0;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  color: var(--color-black);
+  position: relative;
+}
+
+.kit-detox__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.kit-detox__meta {
+  display: flex;
+  gap: 1.2rem;
+  padding-top: 0.8rem;
+}
+
+.kit-detox__meta-item {
+  background: #f5f5f5;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.kit-detox__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.kit-detox__tag {
+  background: #fff7e6;
+  border: 1px solid #ffd591;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  color: #ad6800;
+  font-weight: 500;
+}
+
+.kit-detox__extra {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  font-style: italic;
+  margin: 0;
+  padding: 1.2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border-left: 3px solid var(--color-primary);
+}
+
+/* Área de ações */
+.kit-detox__actions {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  padding-top: 1.6rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+/* Responsivo */
+@media (max-width: 980px) {
+  .kit-detox__grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .kit-detox__media {
+    min-height: 280px;
+    max-height: 320px;
+  }
+
+  .kit-detox__panel {
+    padding: 2.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards.kit-detox-cards {
+    padding: 2rem 1.6rem;
+  }
+
+  .kit-detox__media {
+    min-height: 240px;
+    max-height: 280px;
+  }
+
+  .kit-detox__panel {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .kit-detox__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+  }
+
+  .kit-detox__header h3 {
+    font-size: 2.2rem;
+  }
+
+  .kit-detox__price {
+    font-size: 2.8rem;
+  }
+}

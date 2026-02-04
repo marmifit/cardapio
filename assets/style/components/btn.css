@@ -1,0 +1,51 @@
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: inherit;
+
+  border: none;
+  gap: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 250ms;
+  width: max-content;
+}
+
+.btn-primary a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(1.4rem, 1.2798rem + 1.1009vw, 2rem);
+  font-family: "poppinsregular", sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  width: 100%;
+  height: inherit;
+  /* border-radius: 20px; */
+  padding: 0 2rem;
+  transition: 300ms;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-primary a:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-primary i {
+  font-size: 20px;
+  background-color: var(--color-primary);
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.btn-primary.btn-primary--yellow a {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

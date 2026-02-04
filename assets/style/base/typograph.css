@@ -1,0 +1,50 @@
+/* Set font Poppins */
+
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsmedium";
+  src: url("../../fonts/poppins-medium-webfont.woff2") format("woff2"),
+    url("../../fonts/poppins-medium-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsbold";
+  src: url("../../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../../fonts/poppins-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Set font fa-brands */
+
+@font-face {
+  font-family: "fa-brands-400";
+  src: url("../../fonts/fa-brands-400.woff2") format("woff2"),
+    url("../../fonts/fa-brands-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fa-regular-400";
+  src: url("../../fonts/fa-regular-400.woff2") format("woff2"),
+    url("../../fonts/fa-regular-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fa-solid-900";
+  src: url("../../fonts/fa-solid-900.woff2") format("woff2"),
+    url("../../fonts/fa-solid-900.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

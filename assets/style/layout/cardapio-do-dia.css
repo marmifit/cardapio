@@ -1,0 +1,122 @@
+/* Seção Cardápio do Dia */
+.cardapio-do-dia {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.05) 0%, rgba(255, 193, 7, 0.05) 100%);
+  border-top: 3px solid var(--color-primary);
+}
+
+.container--cardapio-do-dia {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Loading State */
+.cardapio-do-dia__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  min-height: 200px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 152, 0, 0.2);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cardapio-do-dia__loading p {
+  color: var(--color-black);
+  font-size: 1.6rem;
+}
+
+/* Conteúdo Principal */
+.cardapio-do-dia__content {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardapio-do-dia__content.hidden,
+.cardapio-do-dia__error.hidden,
+.cardapio-do-dia__loading.hidden {
+  display: none;
+}
+
+.cardapio-do-dia__pratos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem 2rem;
+  gap: 2.4rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .cardapio-do-dia__pratos {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardapio-do-dia__pratos {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardapio-do-dia__pratos {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Error State */
+.cardapio-do-dia__error {
+  background-color: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #856404;
+  font-size: 1.6rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cardapio-do-dia {
+    padding: 3rem 0;
+  }
+
+  .container--cardapio-do-dia {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardapio-do-dia {
+    padding: 2rem 0;
+  }
+}

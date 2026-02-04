@@ -1,0 +1,126 @@
+/* Seleção de Cardápio - Cards */
+
+.selecao-cardapio {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 4rem;
+}
+
+.selecao-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.selecao-card {
+  padding: 2rem;
+  border-radius: 12px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+}
+
+.selecao-card:hover {
+  border-color: #f6c445;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(246, 196, 69, 0.2);
+}
+
+.selecao-card--ativo {
+  border-color: #f6c445;
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+  box-shadow: 0 12px 20px rgba(246, 196, 69, 0.2);
+}
+
+.selecao-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.selecao-card__header i {
+  font-size: 2.4rem;
+  color: #f6c445;
+}
+
+.selecao-card__header h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.selecao-card__desc {
+  font-size: 1.6rem;
+  color: #555;
+  margin: 0.8rem 0 1.5rem;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+.selecao-card__footer {
+  font-size: 1.2rem;
+  color: #999;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  font-weight: 500;
+}
+
+.selecao-card--ativo .selecao-card__footer {
+  color: #f6c445;
+}
+
+/* Responsivo - Mobile */
+@media (max-width: 600px) {
+  .selecao-cardapio {
+    padding: 3rem 1rem;
+  }
+
+  .selecao-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .selecao-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .selecao-card__header i {
+    font-size: 2rem;
+  }
+
+  .selecao-card__header h3 {
+    font-size: 2rem;
+  }
+
+  .selecao-card__desc {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* Animação de transição */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-cardapio-tipo] {
+  animation: fadeIn 0.4s ease;
+}

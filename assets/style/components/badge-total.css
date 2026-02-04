@@ -1,0 +1,19 @@
+.badge-total {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: var(--color-secudary);
+  border-radius: 50px;
+  right: -5px;
+  top: -5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-total-top {
+  right: 10px;
+  top: 5px;
+}

@@ -1,0 +1,6 @@
+.container.container--cardapio {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4rem 0;
+  height: auto;
+}

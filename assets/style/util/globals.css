@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+.container.container-column {
+  flex-direction: column;
+}
+
+.title {
+  font-family: "poppinsmedium", sans-serif;
+  color: var(--color-black);
+  font-size: clamp(2rem, 2.328rem + 5vw, 6rem);
+}
+
+.paragraphs {
+  font-size: clamp(1.6rem, 1.2798rem + 1.1009vw, 3rem);
+}
+
+.title--sections {
+  font-family: "poppinsmedium", sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 1.2rem + 1.1vw, 1.8rem);
+}
+
+.subtitles--sections {
+  font-family: "poppinsbold", sans-serif;
+  color: var(--color-black);
+  font-size: clamp(2.4rem, 2.2rem + 1.1vw, 6rem);
+  text-align: center;
+}
+
+.title--cards {
+  font-family: "poppinsmedium", sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-black);
+}
+
+.section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  grid-column: 1 / -1;
+
+  padding: 2rem;
+}
+
+.box {
+  transition: 900ms;
+}
+
+.box.animar {
+  animation: slide ease 900ms forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: var(--color-white);
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .title {
+    text-align: center;
+  }
+  .paragraphs {
+    text-align: center;
+  }
+  .section__title.section__title--depoimentos {
+    align-items: center !important;
+  }
+  .depoimentos__content__feedback__client__text p {
+    font-size: 1.3rem;
+  }
+  .endereco .section__title {
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+
+.depoimentos__content__feedback.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}

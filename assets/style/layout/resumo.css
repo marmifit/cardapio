@@ -1,0 +1,96 @@
+.resumo-pedido {
+  min-height: 200px;
+  width: 100%;
+  padding: 0.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.resumo-endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-self: flex-start;
+  padding-top: 1.2rem;
+}
+
+.resumo-endereco__dados {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  padding: 0.8rem;
+  background-color: rgb(241, 241, 241);
+  border-radius: 0.2rem;
+  gap: 1rem;
+}
+
+.resumo-endereco__dados i {
+  font-size: 3.4rem;
+  background-color: var(--color-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  color: var(--color-black);
+}
+
+.resumo-endereco__dados .dados {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.dados p span {
+  font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
+}
+
+.dados p:first-child {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.dados p {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* CEP Loader */
+.cep-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cep-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.cep-loader.hidden {
+  display: none;
+}
+
+.spinner-mini {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 152, 0, 0.2);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin-mini 0.8s linear infinite;
+}
+
+@keyframes spin-mini {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .resumo-endereco {
+    width: 100%;
+  }
+}

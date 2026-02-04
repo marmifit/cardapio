@@ -1,0 +1,150 @@
+/* add to cart */
+
+.add-to-cart {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  flex-direction: column;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  border-radius: 15px;
+  width: 200px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.add-to-cart .add-to-cart__buttons {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.add-to-cart .add-to-cart__buttons span {
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart__buttons span.add-numero-items {
+  padding-top: 2px;
+  border-top: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  width: 4rem;
+  font-weight: bold;
+}
+
+.add-to-cart__buttons span.add-menos,
+.add-to-cart__buttons span.add-mais {
+  padding: 4px 14px;
+  cursor: pointer;
+}
+
+.add-to-cart__buttons span.add-mais {
+  border: 2px solid var(--color-black);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.add-to-cart__buttons span.add-menos {
+  border: 2px solid var(--color-black);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.btn-add-box {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-add-box .btn-add {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--color-green);
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: var(--color-black-heavy) !important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-add-box .btn-add a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+
+.btn-add-box .btn-add-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.add-to-cart.add-to-cart-modal {
+  flex-direction: row;
+  height: 40px;
+  gap: 1.4rem;
+  justify-content: flex-end;
+}
+
+.add-to-cart.add-to-cart-modal .btn-add {
+  background-color: #e74c3c;
+}
+
+/* Variante Kit Detox */
+.add-to-cart.kit-detox-variant {
+  width: auto;
+  gap: 0;
+}
+
+.add-to-cart.kit-detox-variant .add-to-cart__buttons span {
+  border-color: var(--color-black);
+  color: var(--color-black);
+  font-size: 1.6rem;
+  min-width: 44px;
+  height: 44px;
+}
+
+.add-to-cart.kit-detox-variant .add-to-cart__buttons span.add-numero-items {
+  border-top: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  min-width: 60px;
+}
+
+.btn-add-box.kit-detox-cta {
+  height: auto;
+}
+
+.btn-add-box.kit-detox-cta .btn-add {
+  width: auto;
+  min-width: 160px;
+  height: 44px;
+  padding: 0 1.6rem;
+  border-radius: 10px;
+  background: var(--color-green);
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-add-box.kit-detox-cta .btn-add:hover {
+  background-color: var(--color-black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: white !important;
+}
+
+.btn-add-box.kit-detox-cta .btn-add a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}

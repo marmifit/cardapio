@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg" />
+  <script src="https://kit.fontawesome.com/f012a1f94f.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/style/main.css" />
+
+  <!-- SEO Geral -->
+
+  <title>Marmifit Iguatu | Cardápio, Delivery e Reserva</title>
+  <meta name="description"
+    content="Cardápio Marmifit Iguatu com opções saudáveis, delivery rápido e reservas. Peça online e receba em casa com praticidade." />
+  <link rel="canonical" href="https://marmifitiguatu.com" />
+  <meta name="author" content="Marmifit Iguatu" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="Marmifit Iguatu" />
+  <meta name="theme-color" content="#f6c445" />
+
+
+  <!-- google+ / Schema.org -->
+
+  <meta itemprop="name" content="Marmifit Iguatu" />
+  <meta itemprop="description" content="Cardápio Marmifit Iguatu com opções saudáveis, delivery rápido e reservas." />
+  <meta itemprop="image" content="https://marmifitiguatu.com/assets/img/brand_marmifit.svg" />
+
+  <!-- Open graph Facebook -->
+
+  <meta property="og:title" content="Marmifit Iguatu | Cardápio, Delivery e Reserva" />
+  <meta property="og:description"
+    content="Cardápio Marmifit Iguatu com opções saudáveis, delivery rápido e reservas." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="url" content="https://marmifitiguatu.com" />
+  <meta property="og:site_name" content="Marmifit Iguatu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://marmifitiguatu.com/assets/img/bg/teste_prato.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Marmifit Iguatu" />
+
+  <!-- Twitter -->
+
+  <meta name="twitter:title" content="Marmifit Iguatu | Cardápio, Delivery e Reserva" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://marmifitiguatu.com" />
+  <meta name="twitter:image" content="https://marmifitiguatu.com/assets/img/bg/teste_prato.png" />
+  <meta name="twitter:creator" content="@marmifitiguatu" />
+  <meta name="twitter:site" content="@marmifitiguatu" />
+  <!-- se não quiser colocar o twitter do criador, pode colocar o twitter do site, neste caso ficará conforme abaixo -->
+  <!-- <meta name="twitter:site" content="@empresa" -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Marmifit Iguatu",
+      "url": "https://marmifitiguatu.com",
+      "image": "https://marmifitiguatu.com/assets/img/bg/teste_prato.png",
+      "telephone": "+55 88 99978-4277",
+      "servesCuisine": "Brasileira",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Prof. João Coelho - Centro",
+        "addressLocality": "Iguatu",
+        "addressRegion": "CE",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+  </script>
+  <!-- Meta Pixel será carregado após consentimento -->
+</head>
+
+<body>
+
+  <div class="container-mensagens" id="container-mensagens"></div>
+
+  <div class="consent-banner consent-banner--hidden" id="consent-banner" role="dialog" aria-live="polite"
+    aria-label="Consentimento de cookies">
+    <div class="consent-banner__content">
+      <div class="consent-banner__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M27.5 12c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5z" />
+          <path
+            d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14c0-1.4-.2-2.7-.5-4-.3.2-.6.3-1 .3-1.1 0-2-.9-2-2 0-.4.1-.7.3-1-1.3-.3-2.6-.5-4-.5-.8 0-1.5-.7-1.5-1.5S15.2 6 16 6c.3 0 .7 0 1 .1.1-.3.1-.7.1-1 0-1.1.9-2 2-2 .4 0 .7.1 1 .3C18.7 2.2 17.4 2 16 2zm-3.5 7c.8 0 1.5.7 1.5 1.5S13.3 12 12.5 12 11 11.3 11 10.5 11.7 9 12.5 9zm-3 8c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5zm7.5 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm4-8c-.8 0-1.5-.7-1.5-1.5S20.2 12 21 12s1.5.7 1.5 1.5S21.8 15 21 15z" />
+        </svg>
+      </div>
+      <p class="consent-banner__text">
+        Usamos cookies para melhorar sua experiência.
+        <a href="privacidade.html" class="consent-banner__link">Política de Privacidade</a>
+      </p>
+      <div class="consent-banner__actions">
+        <button class="consent-btn consent-btn--decline" id="consent-decline">Recusar tudo</button>
+        <button class="consent-btn consent-btn--accept" id="consent-accept">Aceitar tudo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Bar Status -->
+  <div class="top-bar-status funcionamento">
+    <div class="top-bar-status__content">
+      <span class="top-bar-status__indicator"></span>
+      <span class="top-bar-status__text" data-isopen>Aberto</span>
+      <span class="top-bar-status__hours" data-horarios-texto>Seg-Sex 7h-23h | Sab 8h-14h</span>
+    </div>
+  </div>
+
+  <a class="btn-cart shadow-8dp hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+
+    <div class="badge-total">0</div>
+    <i class="fa fa-shopping-bag"></i>
+  </a>
+
+  <header class="header">
+    <div class="header-container container">
+      <div class="header__logo">
+        <a href="#"><img src="assets/img/brand_marmifit.svg" alt="Brand Marmifit" /></a>
+      </div>
+      <nav class="header__navmenu">
+        <button type="button" class="toggle-menu" data-toggle="collapse" aria-controls="menu" aria-expanded="false"
+          aria-label="Abrir Menu" aria-haspopup="true">
+          <span data-toggle="hamburguer"></span>
+        </button>
+
+        <ul id="menu" role="menu" data-menu="scroll">
+          <li>
+            <a href="#carrinho" data-modal="btn" onclick="cardapio.metodos.abrirCarrinho(true)">Carrinho<i
+                class="fa-solid fa-bag-shopping"></i></a>
+
+          </li>
+          <li>
+            <a href="#cardapio">Cardápio<img src="assets/img/icons/icon-cardapio.svg" alt=""></a>
+          </li>
+          <li>
+            <a href="#servicos">Serviços <img src="assets/img/icons/icon-servicos.svg" alt=""></a>
+          </li>
+          <li>
+
+            <a href="#reserva"> Reserva<img src="./assets/img/icons/icon-reserva.svg" alt=""></a>
+
+          </li>
+          <li>
+            <a href="#endereco">Endereço<i class="fa-solid fa-location-dot"></i></a>
+          </li>
+          <li>
+            <a href="#depoimentos">Depoimentos<img src="assets/img/icons/icon-servicos.svg" alt=""></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-cart">
+        <button class="btn-primary shadow-8dp" data-modal="btn-meuCarrinho">
+
+          <a onclick="cardapio.metodos.abrirCarrinho(true)">Meu carrinho
+            <div class="badge-total container-total-carrinho badge-total-top hidden">8</div>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="banner" id="banner">
+    <div class="container container--banner">
+      <div class="banner__content">
+        <div class="banner__content__text">
+          <h1 class="title">Escolha sua comida <span class="primary-color">favorita.</span></h1>
+          <p class="paragraphs">
+            Aproveite nosso cardapio! Escolha o que desejar e receba em sua casa de forma rápida e
+            segura.
+          </p>
+        </div>
+      </div>
+      <div class="banner__images">
+        <img src="./assets/img/bg/teste_prato.png" alt="" />
+        <span class="banner__images__shape"></span>
+
+        <div class="depoimento shadow-8dp">
+          "Entrega rápida e funcionarios simpáticos. A comida chegou quente e muito saborosa!"
+          <span>Thiago Lopes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seleção de Tipo de Cardápio -->
+  <section class="selecao-cardapio" id="selecao-cardapio">
+    <div class="container">
+      <div class="selecao-cards">
+        <!-- Card 1: Cardápio do Dia -->
+        <div class="selecao-card selecao-card--ativo" data-selecao="dia" onclick="window.toggleCardapio('dia')">
+          <div class="selecao-card__header">
+            <i class="fas fa-utensils"></i>
+            <h3>Cardápio do Dia</h3>
+          </div>
+          <p class="selecao-card__desc">🍽️ Pratos frescos feitos no restaurante</p>
+          <div class="selecao-card__footer">Coma no local</div>
+        </div>
+
+        <!-- Card 2: Marmitas Congeladas -->
+        <div class="selecao-card" data-selecao="congeladas" onclick="window.toggleCardapio('congeladas')">
+          <div class="selecao-card__header">
+            <i class="fas fa-snowflake"></i>
+            <h3>Marmitas Congeladas</h3>
+          </div>
+          <p class="selecao-card__desc">❄️ Pronta entrega para levar</p>
+          <div class="selecao-card__footer">Peça online</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Cardápio do Dia -->
+  <section class="cardapio-do-dia" id="cardapio-do-dia" data-cardapio-tipo="dia">
+    <div class="container container--cardapio-do-dia">
+      <div class="section__title">
+        <h3 class="title--sections"><i class="fas fa-utensils"></i> Cardápio do Dia</h3>
+        <p class="subtitles--sections">🍽️ Pratos frescos feitos no restaurante - coma no local</p>
+      </div>
+
+      <div class="cardapio-do-dia__loading">
+        <div class="spinner"></div>
+        <p>Carregando cardápio...</p>
+      </div>
+
+      <div class="cardapio-do-dia__content hidden" data-cardapio-container>
+        <div class="cards" data-cardapio-dia></div>
+      </div>
+
+      <div class="cardapio-do-dia__error hidden" data-cardapio-error>
+        <p>Não foi possível carregar o cardápio do dia. Tente novamente mais tarde.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="cardapio container container--cardapio" id="cardapio" data-cardapio-tipo="congeladas">
+    <div class="section__title">
+      <h3 class="title--sections"><i class="fas fa-snowflake"></i> Marmitas Congeladas</h3>
+      <p class="subtitles--sections">❄️ Marmitas congeladas a pronta entrega - peça online</p>
+    </div>
+
+    <div class="categories" data-categories>
+      <ul>
+        <li>
+          <a class="shadow-8dp ativo" onclick="cardapio.metodos.obterItensCardapio('aves')" id="menu-aves">
+            <i class="fas fa-drumstick-bite"></i>Aves</a>
+        </li>
+        <li>
+          <a class="shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('carnes')" id="menu-carnes"><i
+              class="fas fa-bacon"></i>Carnes</a>
+        </li>
+        <li>
+          <a class="shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('peixes')" id="menu-peixes"><i
+              class="fas fa-fish"></i>Peixes</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('suino')" id="menu-suino">
+            <i class="fas fa-utensils"></i>Suíno</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('lowCarb')" id="menu-lowCarb"><i
+              class="fas fa-carrot"></i>Low Carb</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('vegetariano')" id="menu-vegetariano"><i
+              class="fas fa-leaf"></i>Vegetariano</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('caldinhos')" id="menu-caldinhos"><i
+              class="fas fa-mug-hot"></i>Caldinhos</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('crepioca')" id="menu-crepioca"><i
+              class="fas fa-bread-slice"></i>Crepioca</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('sucosDetox')" id="menu-sucosDetox"><i
+              class="fas fa-droplet"></i>Sucos Detox</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('sucos')" id="menu-sucos"><i
+              class="fas fa-wine-glass"></i>Sucos</a>
+        </li>
+        <li>
+          <a class=" shadow-8dp" onclick="cardapio.metodos.obterItensCardapio('kitDetox')" id="menu-kitDetox"><i
+              class="fas fa-box"></i>Kit Detox</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cards" data-cards>
+    </div>
+
+    <div class="bg bg--cardapio"></div>
+
+    <button class="btn-primary shadow-8dp" data-vermais id="vermais">
+      <a onclick="cardapio.metodos.verMais()">Ver mais</a>
+    </button>
+  </main>
+  <section class="servicos container container-servicos" id="servicos">
+    <div class="grid">
+      <div class="section__title">
+        <h3 class="title--sections">Serviços</h3>
+        <p class="subtitles--sections">Como são nossos serviços?</p>
+      </div>
+
+      <div class="servicos__items">
+        <img src="assets/img/icons/icone-pedido.svg" alt="Pedido" width="140" id="first" />
+        <span class="title--cards">Fácil de pedir</span>
+        <div class="servicos__content">
+          <p>você só precisa de alguns passos para pedir sua comida.</p>
+        </div>
+      </div>
+      <div class="servicos__items">
+        <img src="assets/img/icons/icone-qualidade.svg" alt="Delivery" width="250" />
+        <span class="title--cards">Melhor Qualidade</span>
+        <div class="servicos__content">
+          <p>Não só a rápidez na entrega, a qualidade também é o nosso forte.</p>
+        </div>
+      </div>
+      <div class="servicos__items">
+        <img src="assets/img/icons/icone-delivery.svg" alt="Delivery" width="250" />
+        <span class="title--cards">Entrega Rápida</span>
+        <div class="servicos__content">
+          <p>Nossa entrega é sempre pontual, rápida e segura.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </section>
+
+
+  <section class="depoimentos" id="depoimentos">
+    <div class="container container-depoimentos">
+      <!-- Imagem grade -->
+      <div class="depoimentos__content">
+        <div class="depoimentos__content__title">
+          <div class="section__title section__title--depoimentos">
+            <h3 class="title--sections">Depoimentos</h3>
+            <p class="subtitles--sections">O que dizem sobre nós?</p>
+          </div>
+        </div>
+
+        <!-- insira o carrossel de depoimentos aqui -->
+
+        <div class="bg bg--cardapio"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reserva" id="reserva">
+
+    <div class="container container--reserva">
+
+      <div class="reserva__content">
+        <div class="section__title">
+          <h3 class="title--sections">Reserva</h3>
+          <p class="subtitles--sections">Quer reservar um horário</p>
+        </div>
+        <p class="reserva__text">
+          Mande uma mensagem clicando no botão abaixo
+          Reserve sua data e horário de forma simples e rápida.
+        </p>
+        <button class="btn-primary btn-primary--yellow">
+          <a href="#" id="btnReserva" target="_blank">Fazer Reserva</a>
+        </button>
+      </div>
+
+      <div class="reserva__image">
+        <img src="./assets/img/icons/icone-reservas.svg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="endereco" id="endereco">
+    <div class="container container-endereco">
+      <div class="endereco__content">
+        <div class="section__title">
+          <h3 class="title--sections">Encontre a Marmifit Iguatu</h3>
+          <p class="subtitles--sections">Onde estamos</p>
+        </div>
+        <p class="endereco__address"><i class="fa-solid fa-location-dot"></i> Rua Prof. João Coelho - Centro, Iguatu.
+        </p>
+        <p class="endereco__hours"><i class="fa-regular fa-clock"></i> Seg-Sex 7h-23h | Sab 8h-14h</p>
+        <div class="endereco__actions">
+          <button class="btn-primary btn-primary--yellow">
+            <a href="https://maps.app.goo.gl/SG1ZzebSLY9YkMRz5?g_st=aw" target="_blank" rel="noopener noreferrer">Obter
+              localização</a>
+          </button>
+          <button class="btn-primary">
+            <a href="https://waze.com/ul?q=Rua%20Prof.%20Jo%C3%A3o%20Coelho%20-%20Centro,%20Iguatu" target="_blank"
+              rel="noopener noreferrer">Abrir no Waze</a>
+          </button>
+        </div>
+      </div>
+      <div class="endereco__map shadow-12dp">
+        <iframe title="Mapa da Marmifit Iguatu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua%20Prof.%20Jo%C3%A3o%20Coelho%20-%20Centro,%20Iguatu&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <span class="go-to-start shadow-12dp" data-gotostart><i class="fas fa-arrow-up"></i></span>
+
+
+  <section class="modal-cart hidden" data-modal="modal">
+    <div class="container container--modal">
+      <div class="etapas">
+
+        <div class="etapas-container">
+          <div class="etapas-numeros">
+            <span class="shadow-8dp etapa etapa1">1</span>
+            <span class="line line1"></span>
+            <span class="shadow-8dp etapa etapa2">2</span>
+            <span class="line line2 "></span>
+            <span class="shadow-8dp etapa etapa3">3</span>
+            <span class="line line3 "></span>
+            <span class="shadow-8dp etapa etapa4">4</span>
+          </div>
+
+          <div class="botao-fechar">
+            <button class="btn-primary btn-primary--fechar shadow-8dp" data-modal="btn-fechar"
+              onclick="cardapio.metodos.abrirCarrinho(false)">
+              <a href="#">Fechar</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="titulo-carrinho " data-modal="titulo-etapas">
+          <h4>Seu Carrinho</h4>
+        </div>
+
+      </div>
+      <div class="products-container hidden scrollContainer" data-modal="products">
+
+
+      </div>
+
+      <div class="local-entrega scrollContainer hidden" data-modal="entrega">
+        <form action="#" method="post" class="grid-form">
+
+          <div class="cep control-form">
+            <label for="cep">CEP:
+              <div class="cep-container">
+                <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" autofocus
+                  class="shadow-8dp">
+                <a class="btn-primary" onclick="cardapio.metodos.buscarCep()"><i class="fa fa-search"></i></a>
+                <div class="cep-loader hidden" id="cep-loader">
+                  <span class="spinner-mini"></span>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="endereco control-form">
+            <label for="endereco-entrega">Endereço:
+              <input type="text" id="endereco-entrega" name="endereco" autofocus class="shadow-8dp">
+
+            </label>
+
+          </div>
+          <div class="bairro control-form">
+            <label for="bairro">Bairro:
+              <input type="text" id="bairro" name="bairro" autofocus class="shadow-8dp">
+            </label>
+          </div>
+          <div class="numero control-form">
+            <label for="numero">Número:
+              <input type="text" id="numero" name="numero" autofocus class="shadow-8dp">
+            </label>
+          </div>
+          <div class="cidade control-form">
+            <label for="cidade">Cidade:
+              <input type="text" id="cidade" name="cidade" autofocus class="shadow-8dp">
+            </label>
+          </div>
+          <div class="complemento control-form">
+            <label for="complemento">Complemento:
+              <input type="text" id="complemento" name="complemento" autofocus class="shadow-8dp">
+            </label>
+          </div>
+          <div class="uf control-form">
+            <label for="uf">UF:
+              <select name="uf" id="uf" class="shadow-8dp">
+
+                <option value="">...</option>
+                <option value="AC"> AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP"> SP</option>
+                <option value="SE"> SE</option>
+                <option value="TO"> TO</option>
+              </select>
+            </label>
+          </div>
+
+
+
+        </form>
+
+      </div>
+
+      <div class="pagamento scrollContainer hidden" data-modal="pagamento">
+        <div class="pagamento__content">
+          <h4 class="pagamento__titulo">Forma de pagamento</h4>
+
+          <div class="pagamento__grupo">
+            <label class="pagamento__option">
+              <input type="radio" name="tipo-pagamento" value="online">
+              <span>Pagamento online</span>
+            </label>
+            <label class="pagamento__option">
+              <input type="radio" name="tipo-pagamento" value="entrega">
+              <span>Pagamento na entrega</span>
+            </label>
+          </div>
+
+          <div class="pagamento__subgrupo hidden" data-pagamento-online>
+            <p class="pagamento__subtitulo">Online</p>
+            <label class="pagamento__option">
+              <input type="radio" name="pagamento-online-opcao" value="pix">
+              <span>Pix</span>
+            </label>
+          </div>
+
+          <div class="pagamento__subgrupo hidden" data-pagamento-entrega>
+            <p class="pagamento__subtitulo">Na entrega</p>
+            <label class="pagamento__option">
+              <input type="radio" name="pagamento-entrega-opcao" value="cartao">
+              <span>Cartão</span>
+            </label>
+            <label class="pagamento__option">
+              <input type="radio" name="pagamento-entrega-opcao" value="dinheiro">
+              <span>Dinheiro</span>
+            </label>
+
+            <div class="pagamento__troco hidden" data-pagamento-troco>
+              <p class="pagamento__subtitulo">Precisa de troco?</p>
+              <div class="pagamento__grupo">
+                <label class="pagamento__option">
+                  <input type="radio" name="troco-opcao" value="nao" checked>
+                  <span>Não</span>
+                </label>
+                <label class="pagamento__option">
+                  <input type="radio" name="troco-opcao" value="sim">
+                  <span>Sim</span>
+                </label>
+              </div>
+
+              <div class="pagamento__troco-valor hidden" data-pagamento-troco-valor>
+                <label class="pagamento__label" for="troco-para">Troco para quanto?</label>
+                <input class="pagamento__input shadow-8dp" type="number" id="troco-para" min="0" step="0.01"
+                  placeholder="Ex: 50,00">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resumo-pedido scrollContainer hidden" data-modal="resumo">
+
+        <!-- <div class="produto produto-resumo">
+    
+              <div class="produto-image produto-image--resumo">
+                <img src="assets/img/cardapio/burguers/gotts-complete-cheeseburger-kit-for-4.7bdc74104b193427b3fe6eae39e05b5e.jpg" alt="">
+    
+                <div class=" produto-preco">
+                  <h3>Gramercy Tavern</h3>
+                  <span>R$ 99,00</span>
+                </div>
+    
+              </div>
+
+              <div class="produto-quantidade">
+                <span>X 1</span>
+              </div>
+            </div> -->
+
+
+      </div>
+
+      <div class="resumo-endereco hidden" data-modal="resumo-endereco">
+        <p class="titulo-carrinho ">Local da entrega:</p>
+        <div class="resumo-endereco__dados">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <div class="dados">
+            <p>
+              <span class="nome-endereco"></span>
+            </p>
+            <p>
+              <span class="nome-localidade"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resumo-pagamento hidden" data-modal="resumo-pagamento">
+        <p class="resumo-pagamento__info" data-resumo-pagamento></p>
+      </div>
+
+
+      <div class="total ">
+        <div class="total-infos">
+          <div class="subtotal">
+
+            <p class="valor-subtotal">
+              <span>Subtotal:</span>
+              <span id="valorSubtotal">R$ 0,00</span>
+            </p>
+
+            <p class="valor-entrega">
+              <span><i class="fas fa-motorcycle"></i>Entrega:</span>
+              <span id="valorEntrega">+ R$ 0,00</span>
+            </p>
+
+            <p class="valor-total">
+              <span>Total:</span>
+              <span id="valorTotal">R$ 100,00</span>
+            </p>
+
+            <div class="total-botao">
+              <button class="btn-primary  button-total shadow-8dp hidden" data-modal="btn-voltar"
+                onclick="cardapio.metodos.voltarEtapa()">
+                <a href="javascript:void(0);">Voltar</a>
+              </button>
+              <button class="btn-primary btn-primary--yellow button-total shadow-8dp hidden" data-modal="btn-revisar"
+                onclick="cardapio.metodos.resumoPedido()">
+                <a href="#">Forma de pagamento</a>
+              </button>
+              <button class="btn-primary btn-primary--yellow button-total shadow-8dp hidden" data-modal="btn-continuar"
+                onclick="cardapio.metodos.carregarEndereco()">
+                <a href="#">Continuar</a>
+              </button>
+              <button class="btn-primary btn-primary--yellow button-total shadow-8dp hidden" data-modal="btn-pagamento"
+                onclick="cardapio.metodos.validarPagamento()">
+                <a href="#">Revisar Pedido</a>
+              </button>
+              <button class="btn-primary btn-primary--yellow button-total shadow-8dp hidden" data-modal="btn-enviar">
+                <a href="javascript:void(0);" id="enviarPedido"
+                  onclick="cardapio.metodos.finalizarEnvio(); return false;">Enviar Pedido</a>
+              </button>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <!-- Modal de Sucesso do Pedido -->
+  <div class="modal-sucesso hidden" id="modal-sucesso">
+    <div class="modal-sucesso__content">
+      <div class="modal-sucesso__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h2 class="modal-sucesso__title">Pedido Confirmado! 🎉</h2>
+      <p class="modal-sucesso__text">Encaminharemos o seu pedido para o WhatsApp em:</p>
+      <div class="modal-sucesso__timer">
+        <span id="timer-contador">3</span>
+        <span class="timer-label">segundos</span>
+      </div>
+      <div class="modal-sucesso__buttons">
+        <button class="btn-primary btn-primary--yellow" onclick="cardapio.metodos.irParaWhatsapp()">
+          Ir para WhatsApp agora
+        </button>
+        <button class="btn-primary" onclick="cardapio.metodos.fecharModalSucesso()">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer__logo">
+      <img src="assets/img/brand_marmifit.svg" alt="">
+    </div>
+
+    <div class="copy">
+      <p class="funcionamento"><span data-horarios-texto-footer>Seg a Sab das 8h às 23h</span>
+
+        <span class="isOpen" data-isopen>Aberto</span>
+      </p>
+      <p>
+        <b>Marmifit Iguatu</b> &copy; Todos os direitos reservados.
+      </p>
+      <p>
+        <a href="privacidade.html">Política de Privacidade</a>
+      </p>
+    </div>
+
+
+
+    <div class=" banner__content__social-icons">
+      <a href="#"><i class="fab fa-instagram shadow-8dp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f shadow-8dp"></i></a>
+      <a href="#"><i class="fab fa-whatsapp shadow-8dp"></i></a>
+    </div>
+    <p style="margin-top: 20px;"> Desenvolvido com ❤ por <br>
+      <a href="https://jhonicruz.github.io/devlinks" target="_blank" style="margin-top: 10px;">Jhoni
+        Cruz
+      </a>
+    </p>
+
+  </footer>
+  <script src="./assets/scripts/jquery-1.12.4.min.js"></script>
+  <script src="./assets/scripts/api/dados.js"></script>
+  <script src="./assets/scripts/core/cardapio.js"></script>
+  <script src="./assets/scripts/core/cardapioDodia.js"></script>
+  <script>
+    (function () {
+      const CONSENT_KEY = "marmifit_consent_marketing";
+      const banner = document.getElementById("consent-banner");
+      const acceptBtn = document.getElementById("consent-accept");
+      const declineBtn = document.getElementById("consent-decline");
+
+      function hideBanner() {
+        if (banner) {
+          banner.classList.remove("consent-banner--show");
+          setTimeout(() => {
+            banner.classList.add("consent-banner--hidden");
+          }, 400);
+        }
+      }
+
+      function showBanner() {
+        if (banner) {
+          setTimeout(() => {
+            banner.classList.remove("consent-banner--hidden");
+            setTimeout(() => {
+              banner.classList.add("consent-banner--show");
+            }, 50);
+          }, 4000);
+        }
+      }
+
+      function loadMetaPixel() {
+        if (window.fbq) return;
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1442503990662375');
+        fbq('track', 'PageView');
+      }
+
+      let stored = null;
+      try {
+        stored = localStorage.getItem(CONSENT_KEY);
+      } catch (e) {
+        stored = null;
+      }
+      if (stored === "granted") {
+        loadMetaPixel();
+        hideBanner();
+      } else if (stored === "denied") {
+        hideBanner();
+      } else {
+        showBanner();
+      }
+
+      if (acceptBtn) {
+        acceptBtn.addEventListener("click", function () {
+          try {
+            localStorage.setItem(CONSENT_KEY, "granted");
+          } catch (e) {
+            // Sem persistência disponível
+          }
+          loadMetaPixel();
+          hideBanner();
+        });
+      }
+
+      if (declineBtn) {
+        declineBtn.addEventListener("click", function () {
+          try {
+            localStorage.setItem(CONSENT_KEY, "denied");
+          } catch (e) {
+            // Sem persistência disponível
+          }
+          hideBanner();
+        });
+      }
+
+      // Scroll Consent: aceita automaticamente ao rolar a página
+      let scrollAccepted = false;
+      window.addEventListener("scroll", function () {
+        if (scrollAccepted) return;
+        if (!stored || stored === null) {
+          const scrolled = window.scrollY || window.pageYOffset;
+          // Se rolar mais de 800px, considera aceite (usuário chegou ao cardápio)
+          if (scrolled > 800) {
+            scrollAccepted = true;
+            try {
+              localStorage.setItem(CONSENT_KEY, "granted");
+            } catch (e) {
+              // Sem persistência disponível
+            }
+            loadMetaPixel();
+            hideBanner();
+          }
+        }
+      });
+    })();
+  </script>
+  <script type="module" src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* Aviso de Loja Fechada */
+.aviso-loja-fechada {
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin: 1rem auto 2rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border: 1px solid #fca5a5;
+  border-radius: 0.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.aviso-loja-fechada__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #991b1b;
+  font-weight: 500;
+  font-family: "poppinsregular", sans-serif;
+}
+
+.aviso-loja-fechada__content i {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito visual nos botões bloqueados */
+[data-bloqueado],
+[data-bloqueado-checkout],
+[data-bloqueado-qty] {
+  cursor: not-allowed !important;
+  transition: all 0.3s ease;
+  opacity: 0.5 !important;
+}
+
+[data-bloqueado]:hover,
+[data-bloqueado-checkout]:hover,
+[data-bloqueado-qty]:hover {
+  transform: none !important;
+}
+
+/* Garantir que ícones dentro dos botões bloqueados fiquem acinzentados */
+[data-bloqueado-qty] i,
+[data-bloqueado] i,
+[data-bloqueado-checkout] i {
+  color: #999 !important;
+  opacity: 1 !important;
+}
+
+/* Forçar bordas e backgrounds acinzentados nos botões de quantidade */
+[data-bloqueado-qty].add-mais,
+[data-bloqueado-qty].add-menos {
+  border-color: #ccc !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* Também bloquear o span de número no meio */
+[data-bloqueado-qty].add-numero-items {
+  border-top-color: #ccc !important;
+  border-bottom-color: #ccc !important;
+  color: #999 !important;
+}
+
+/* Botões de adicionar ao carrinho bloqueados */
+[data-bloqueado].btn-add {
+  background-color: #999 !important;
+  border-color: #999 !important;
+}

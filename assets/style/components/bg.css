@@ -1,0 +1,13 @@
+.bg {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 500px;
+  width: 100%;
+  background-image: url("../../img/bg/bg-icons-2.png");
+  z-index: -2;
+}
+
+.bg.bg--cardapio {
+  background-image: url("../../img/bg/bg-icons-1.png");
+}
