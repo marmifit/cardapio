@@ -62,7 +62,7 @@ const MENU = {
     },
     {
       id: "risoto-frango",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/aves/aves-risoto.jpg",
       name: "Risoto",
       dsc: "Cubos de frango com arroz, molho vermelho, molho branco, ervilha, mussarela, milho, azeitona e pimenta biquinho",
       peso: "350g",
@@ -124,7 +124,7 @@ const MENU = {
     },
     {
       id: "parmegiana-alcatra",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-parmegiana.jpg",
       name: "À Parmegiana",
       dsc: "Alcatra com molho de tomate, mussarela, arroz à grega e purê de batata inglesa",
       peso: "350g",
@@ -188,7 +188,7 @@ const MENU = {
   suino: [
     {
       id: "file-mignon-suino",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/suino/suino-file-mignon.jpg",
       name: "Filé Mignon",
       dsc: "Filé mignon suíno com arroz à grega, couve manteiga e cenoura refogada",
       peso: "350g",
@@ -198,7 +198,7 @@ const MENU = {
     },
     {
       id: "file-mignon-molho-ferrugem",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/suino/suino-file-mignon-molho-ferrugem.jpg",
       name: "Filé Mignon ao Molho Ferrugem",
       dsc: "Filé mignon suíno com molho ferrugem, arroz branco, repolho e cenoura refogada",
       peso: "350g",
