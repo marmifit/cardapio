@@ -8,7 +8,7 @@ const MENU = {
       peso: "350g",
       kcal: "396.14",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "frango-parmegiana",
@@ -18,7 +18,7 @@ const MENU = {
       peso: "350g",
       kcal: "342.10",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "file-frango-grelhado",
@@ -28,7 +28,7 @@ const MENU = {
       peso: "350g",
       kcal: "306.17",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "estrogonoffe-frango",
@@ -48,7 +48,7 @@ const MENU = {
       peso: "350g",
       kcal: "312.21",
       obs: ["Contém lactose", "Contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "fricasse-frango",
@@ -58,7 +58,7 @@ const MENU = {
       peso: "350g",
       kcal: "383.50",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "risoto-frango",
@@ -68,7 +68,7 @@ const MENU = {
       peso: "350g",
       kcal: "387",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
   ],
   carnes: [
@@ -80,7 +80,7 @@ const MENU = {
       peso: "350g",
       kcal: "445",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "arroz-carreteiro-carne-de-sol",
@@ -90,7 +90,7 @@ const MENU = {
       peso: "350g",
       kcal: "467",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "molho-madeira-alcatra",
@@ -100,7 +100,7 @@ const MENU = {
       peso: "350g",
       kcal: "411",
       obs: ["Contém glúten", "Não contém lactose"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "lasanha-patinho-moido",
@@ -110,7 +110,7 @@ const MENU = {
       peso: "350g",
       kcal: "498.50",
       obs: ["Contém glúten", "Contém lactose"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "yakisoba-alcatra",
@@ -120,7 +120,7 @@ const MENU = {
       peso: "350g",
       kcal: "411.15",
       obs: ["Não contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "parmegiana-alcatra",
@@ -130,7 +130,7 @@ const MENU = {
       peso: "350g",
       kcal: "475",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "espaguete-alcatra",
@@ -140,7 +140,7 @@ const MENU = {
       peso: "350g",
       kcal: "575",
       obs: ["Contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
   ],
   peixes: [
@@ -152,7 +152,7 @@ const MENU = {
       peso: "350g",
       kcal: "368",
       obs: ["Não contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "peixe-a-delicia",
@@ -162,7 +162,7 @@ const MENU = {
       peso: "350g",
       kcal: "482",
       obs: ["Contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "moqueca-peixe",
@@ -172,7 +172,7 @@ const MENU = {
       peso: "350g",
       kcal: "453",
       obs: ["Contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "mediterraneo-peixe",
@@ -182,7 +182,7 @@ const MENU = {
       peso: "350g",
       kcal: "432",
       obs: ["Contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
   ],
   suino: [
@@ -194,7 +194,7 @@ const MENU = {
       peso: "350g",
       kcal: "324",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
     {
       id: "file-mignon-molho-ferrugem",
@@ -204,7 +204,7 @@ const MENU = {
       peso: "350g",
       kcal: "387",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 22.99,
+      price: 24.99,
     },
   ],
   lowCarb: [
@@ -216,7 +216,7 @@ const MENU = {
       peso: "350g",
       kcal: "356",
       obs: ["Contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "ratatouille-patinho",
@@ -226,7 +226,7 @@ const MENU = {
       peso: "350g",
       kcal: "298",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "file-peixe-legumes",
@@ -236,7 +236,7 @@ const MENU = {
       peso: "350g",
       kcal: "298",
       obs: ["Não contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "frango-legumes",
@@ -246,7 +246,7 @@ const MENU = {
       peso: "350g",
       kcal: "198",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "picadinho-legumes",
@@ -256,7 +256,7 @@ const MENU = {
       peso: "350g",
       kcal: "245",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
   ],
   vegetariano: [
@@ -268,7 +268,7 @@ const MENU = {
       peso: "350g",
       kcal: "383",
       obs: ["Não contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "lasanha-soja",
@@ -278,7 +278,7 @@ const MENU = {
       peso: "350g",
       kcal: "396",
       obs: ["Não contém lactose", "Contém glúten"],
-      price: 24.99,
+      price: 26.99,
     },
     {
       id: "estrogonoffe-palmito",
@@ -300,7 +300,7 @@ const MENU = {
       peso: "250ml",
       kcal: "189",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 12.0,
+      price: 13.0,
     },
     {
       id: "caldinho-frango",
@@ -310,7 +310,7 @@ const MENU = {
       peso: "250ml",
       kcal: "157",
       obs: ["Não contém lactose", "Não contém glúten"],
-      price: 12.0,
+      price: 13.0,
     },
   ],
   crepioca: [
