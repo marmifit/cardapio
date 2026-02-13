@@ -84,7 +84,7 @@ const MENU = {
     },
     {
       id: "arroz-carreteiro-carne-de-sol",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-arroz-carreteiro.jpg",
       name: "Arroz Carreteiro",
       dsc: "Carne de sol desfiada com arroz, pimentão colorido e pimenta biquinho",
       peso: "350g",
