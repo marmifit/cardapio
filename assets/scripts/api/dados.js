@@ -22,7 +22,7 @@ const MENU = {
     },
     {
       id: "file-frango-grelhado",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/aves/aves-file-de-frango.jpg",
       name: "Filé de Frango",
       dsc: "Filé de Frango Grelhado com arroz à grega, brócolis e couve-flor",
       peso: "350g",
@@ -105,7 +105,7 @@ const MENU = {
     {
       id: "lasanha-patinho-moido",
       img: "./assets/img/cardapio/carnes/carnes-lasanha.jpg",
-      name: "Lasanha",
+      name: "Lasanha à bolonhesa",
       dsc: "Patinho moído com macarrão para lasanha, molho de tomate artesanal, mussarela e chia",
       peso: "350g",
       kcal: "498.50",
@@ -210,8 +210,8 @@ const MENU = {
   lowCarb: [
     {
       id: "lasanha-berinjela",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
-      name: "Lasanha Berinjela",
+      img: "./assets/img/cardapio/carnes/carnes-lasanha.jpg",
+      name: "Lasanha de Berinjela",
       dsc: "Berinjela com molho de tomate artesanal, patinho moído, mussarela e chia",
       peso: "350g",
       kcal: "356",
@@ -273,7 +273,7 @@ const MENU = {
     {
       id: "lasanha-soja",
       img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
-      name: "Lasanha",
+      name: "Lasanha de Soja",
       dsc: "Soja refogada com molho de tomate artesanal, macarrão de lasanha e orégano",
       peso: "350g",
       kcal: "396",
