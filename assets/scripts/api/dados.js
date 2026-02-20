@@ -2,7 +2,7 @@ const MENU = {
   aves: [
     {
       id: "baiao-de-3-frango-grelhado",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/aves/aves-baiao-de-3.jpg",
       name: "Baião de 3",
       dsc: "Filé de Frango Grelhado com baião de feijão verde, queijo coalho, vagem e cenoura",
       peso: "350g",
