@@ -114,7 +114,7 @@ const MENU = {
     },
     {
       id: "yakisoba-alcatra",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-yakisoba.jpg",
       name: "Yakisoba",
       dsc: "Espaguete integral com tiras de alcatra, shoyu, pimentão colorido e cenoura",
       peso: "350g",
