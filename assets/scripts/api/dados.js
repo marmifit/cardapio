@@ -114,7 +114,7 @@ const MENU = {
     },
     {
       id: "yakisoba-alcatra",
-      img: "./assets/img/cardapio/carnes/carnes-yakisoba.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-yakissoba.jpg",
       name: "Yakisoba",
       dsc: "Espaguete integral com tiras de alcatra, shoyu, pimentão colorido e cenoura",
       peso: "350g",
