@@ -74,7 +74,7 @@ const MENU = {
   carnes: [
     {
       id: "escondidinho-carne-de-sol",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-escondidinho.jpg",
       name: "Escondidinho",
       dsc: "Purê de macaxeira com mussarela e carne de sol desfiada",
       peso: "350g",
@@ -114,7 +114,7 @@ const MENU = {
     },
     {
       id: "yakisoba-alcatra",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-yakissoba.jpg",
       name: "Yakisoba",
       dsc: "Espaguete integral com tiras de alcatra, shoyu, pimentão colorido e cenoura",
       peso: "350g",
@@ -134,7 +134,7 @@ const MENU = {
     },
     {
       id: "espaguete-alcatra",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/carnes/carnes-espaguete.jpg",
       name: "Espaguete",
       dsc: "Alcatra com molho vermelho, mussarela e espaguete aos quatro queijos",
       peso: "350g",
@@ -166,7 +166,7 @@ const MENU = {
     },
     {
       id: "moqueca-peixe",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/peixes/moqueca-de-peixe.jpg",
       name: "Moqueca",
       dsc: "Filé de peixe com molho de moqueca, arroz branco, pirão, abobrinha e cenoura",
       peso: "350g",
