@@ -156,7 +156,7 @@ const MENU = {
     },
     {
       id: "peixe-a-delicia",
-      img: "./assets/img/cardapio/peixes/peixes-peixe-a-delicia.jpg",
+      img: "./assets/img/cardapio/peixes/peixes-moqueca-de-peixe.jpg",
       name: "Peixe à Delícia",
       dsc: "Filé de peixe com banana, molho branco, arroz com açafrão, mix de repolho e cenoura refogada",
       peso: "350g",
