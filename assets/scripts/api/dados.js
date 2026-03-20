@@ -167,7 +167,7 @@ const MENU = {
     {
       id: "moqueca-peixe",
       img: "./assets/img/cardapio/peixes/peixes-moqueca-de-peixe.jpg",
-      name: "Moqueca",
+      name: "Moqueca de Peixe",
       dsc: "Filé de peixe com molho de moqueca, arroz branco, pirão, abobrinha e cenoura",
       peso: "350g",
       kcal: "453",
@@ -176,7 +176,7 @@ const MENU = {
     },
     {
       id: "mediterraneo-peixe",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/peixes/peixes-mediterraneo.jpg",
       name: "Mediterrâneo",
       dsc: "Filé de peixe com molho de tomate cereja, azeitona, ervilha, arroz branco e purê de batata inglesa",
       peso: "350g",
@@ -426,7 +426,7 @@ const MENU = {
     },
     {
       id: "premium-file-mignon-bovino-a-parmegiana",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/premium/premium-file-mignon-bovino-a-parmegiana.jpg",
       name: "Filé Mignon Bovino à Parmegiana",
       dsc: "Arroz à grega e purê de batata inglesa",
       peso: "350g",
@@ -458,7 +458,7 @@ const MENU = {
   caldinhos: [
     {
       id: "caldinho-carne-moida",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/caldinhos/caldinhos-carne-moida.jpg",
       name: "Carne Moída",
       dsc: "Patinho moído cozido com legumes",
       peso: "250ml",
@@ -468,7 +468,7 @@ const MENU = {
     },
     {
       id: "caldinho-frango",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/caldinhos/caldinhos-frango.jpg",
       name: "Frango",
       dsc: "Frango desfiado cozido com legumes",
       peso: "250ml",
