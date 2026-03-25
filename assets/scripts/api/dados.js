@@ -477,7 +477,7 @@ const MENU = {
       price: 13.0,
     },
   ],
-  crepioca: [
+  lanches: [
     {
       id: "crepioca-frango",
       img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
@@ -488,11 +488,21 @@ const MENU = {
       obs: ["Não contém lactose", "Não contém glúten"],
       price: 12.0,
     },
+    {
+      id: "sanduiche-natural-frango",
+      img: "./assets/img/cardapio/lanches/lanche-sanduiche-natural-frango.webp",
+      name: "Sanduíche Natural de Frango",
+      dsc: "Pão integral com frango grelhado, alface, tomate, cenoura ralada e maionese caseira",
+      peso: "280g",
+      kcal: "245",
+      obs: ["Não contém lactose", "Contém glúten"],
+      price: 18.99,
+    },
   ],
   sucosDetox: [
     {
       id: "suco-detox-verde",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/sucosDetox/sucosDetox-verde.webp",
       name: "Verde",
       dsc: "Abacaxi, hortelã, gengibre, limão e couve manteiga",
       peso: "300ml",
@@ -502,7 +512,7 @@ const MENU = {
     },
     {
       id: "suco-detox-vermelho",
-      img: "./assets/img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+      img: "./assets/img/cardapio/sucosDetox/sucosDetox-vermelho.webp",
       name: "Vermelho",
       dsc: "Beterraba, cenoura, acerola, limão e gengibre",
       peso: "300ml",
